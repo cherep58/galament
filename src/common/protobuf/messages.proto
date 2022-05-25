@@ -1,0 +1,36 @@
+syntax="proto3";
+
+package galament.common.protobuf;
+
+message DataPacket {
+	bytes uuid = 1;
+	int64 dt = 2;
+	float x = 3;
+	float y = 4;
+}
+
+message UuidStatistic {
+	bytes uuid = 1;
+	float x_1min = 2;
+	float y_1min = 3;
+	float x_5min = 4;
+	float y_5min = 5;
+}
+
+message Statistic {
+	repeated UuidStatistic uuid_list = 1;
+}
+
+message Message {
+	enum Type {
+		UNKNOWN = 0;
+		DATA_PACKET = 1;
+		STATISTIC_REQUEST = 2;
+		STATISTIC_RESPONSE = 3;
+	}
+	Type type = 1;
+	oneof payload {
+		DataPacket data_packet = 2;
+		Statistic statistic = 3;
+	}
+}

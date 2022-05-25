@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\database">
+      <UniqueIdentifier>{2b895d5d-94dc-4c25-a32a-404713a2143c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third_party">
+      <UniqueIdentifier>{184ac1c9-0923-486a-a81a-dc1e3e77e34f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third_party\SQLIteCpp">
+      <UniqueIdentifier>{c0a87e72-6a20-469a-8678-7c61fbbb89ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third_party\sqlite3">
+      <UniqueIdentifier>{ac56c1ac-1e6f-4f8b-82c9-830cb99d46bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{42220ec7-b625-4d9b-85e3-a75955f3fde9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data_types">
+      <UniqueIdentifier>{a7098190-91b0-4f3d-b32a-8d8aa0b5921f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\protobuf">
+      <UniqueIdentifier>{7d36d642-34b8-4980-91c7-b76b1b1a60b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\websocket">
+      <UniqueIdentifier>{7d99162b-e863-4ec0-8774-1f75313cda5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\command">
+      <UniqueIdentifier>{d72993e0-75a1-4abb-baf0-b97aa493be20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\command\command">
+      <UniqueIdentifier>{ca1d8c2b-00ce-42ec-b8a8-267b8bc064b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\command\executor">
+      <UniqueIdentifier>{59c275de-09fe-4f91-bc50-fdda4cc7bc96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\handler">
+      <UniqueIdentifier>{8fed568e-ed37-46b1-9e3b-5eea316f93be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="database\database.cpp">
+      <Filter>Source Files\database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\SQLiteCpp\src\Backup.cpp">
+      <Filter>Source Files\third_party\SQLIteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\SQLiteCpp\src\Column.cpp">
+      <Filter>Source Files\third_party\SQLIteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\SQLiteCpp\src\Database.cpp">
+      <Filter>Source Files\third_party\SQLIteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\SQLiteCpp\src\Exception.cpp">
+      <Filter>Source Files\third_party\SQLIteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\SQLiteCpp\src\Savepoint.cpp">
+      <Filter>Source Files\third_party\SQLIteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\SQLiteCpp\src\Statement.cpp">
+      <Filter>Source Files\third_party\SQLIteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\SQLiteCpp\src\Transaction.cpp">
+      <Filter>Source Files\third_party\SQLIteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\SQLiteCpp\sqlite3\sqlite3.c">
+      <Filter>Source Files\third_party\sqlite3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\data_types\data_packet.cpp">
+      <Filter>Source Files\common\data_types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\data_types\timestamp.cpp">
+      <Filter>Source Files\common\data_types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\data_types\uuid.cpp">
+      <Filter>Source Files\common\data_types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\data_types\uuid_statistic.cpp">
+      <Filter>Source Files\common\data_types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\protobuf\message_serializer.cpp">
+      <Filter>Source Files\common\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\protobuf\messages.pb.cc">
+      <Filter>Source Files\common\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="websocket\server.cpp">
+      <Filter>Source Files\websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="websocket\client.cpp">
+      <Filter>Source Files\websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="command\command_producer.cpp">
+      <Filter>Source Files\command</Filter>
+    </ClCompile>
+    <ClCompile Include="command\command_queue.cpp">
+      <Filter>Source Files\command</Filter>
+    </ClCompile>
+    <ClCompile Include="command\command_executor.cpp">
+      <Filter>Source Files\command</Filter>
+    </ClCompile>
+    <ClCompile Include="command\command\abstract.cpp">
+      <Filter>Source Files\command\command</Filter>
+    </ClCompile>
+    <ClCompile Include="command\command\get_statistic.cpp">
+      <Filter>Source Files\command\command</Filter>
+    </ClCompile>
+    <ClCompile Include="command\command\save_data_packet.cpp">
+      <Filter>Source Files\command\command</Filter>
+    </ClCompile>
+    <ClCompile Include="command\executor\save_data_packet.cpp">
+      <Filter>Source Files\command\executor</Filter>
+    </ClCompile>
+    <ClCompile Include="command\executor\get_statistic.cpp">
+      <Filter>Source Files\command\executor</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\client_message_handler.cpp">
+      <Filter>Source Files\handler</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

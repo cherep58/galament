@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{5d22521a-f48c-4ebf-aefc-c95856e6ddcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\data_types">
+      <UniqueIdentifier>{2ec9215c-ec77-41d5-892b-57785b5933dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\protobuf">
+      <UniqueIdentifier>{055e7b8b-fb51-41d9-b338-2cd0f2738e7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\websocket">
+      <UniqueIdentifier>{aee6071a-6ba9-4823-8c7d-40681373a08a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\work_mode">
+      <UniqueIdentifier>{47d6c6ca-2d3d-4793-addd-c4035c648321}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\helper">
+      <UniqueIdentifier>{d2995d04-c8c5-4a56-8cfa-d26fed062578}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\data_types\uuid.cpp">
+      <Filter>Source Files\common\data_types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\protobuf\messages.pb.cc">
+      <Filter>Source Files\common\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="websocket\client.cpp">
+      <Filter>Source Files\websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="work_mode\get_statistic.cpp">
+      <Filter>Source Files\work_mode</Filter>
+    </ClCompile>
+    <ClCompile Include="work_mode\factory.cpp">
+      <Filter>Source Files\work_mode</Filter>
+    </ClCompile>
+    <ClCompile Include="work_mode\abstract.cpp">
+      <Filter>Source Files\work_mode</Filter>
+    </ClCompile>
+    <ClCompile Include="work_mode\send_data_packet.cpp">
+      <Filter>Source Files\work_mode</Filter>
+    </ClCompile>
+    <ClCompile Include="helper\random_generator.cpp">
+      <Filter>Source Files\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\protobuf\message_serializer.cpp">
+      <Filter>Source Files\common\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="helper\statistic_printer.cpp">
+      <Filter>Source Files\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\data_types\data_packet.cpp">
+      <Filter>Source Files\common\data_types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\data_types\uuid_statistic.cpp">
+      <Filter>Source Files\common\data_types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\data_types\timestamp.cpp">
+      <Filter>Source Files\common\data_types</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
